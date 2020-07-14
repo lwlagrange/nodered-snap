@@ -1,4 +1,4 @@
-name: node-red-rpi
+name: node-red-rpi-lwl
 adopt-info: node-red
 summary: Low-code programming for event-driven applications
 description: 
@@ -145,7 +145,7 @@ parts:
         export GLOBAL_AGENT_HTTP_PROXY="${http_proxy}"
         export GLOBAL_AGENT_HTTPS_PROXY="${http_proxy}"
       fi
-
+      npm install node-red-contrib-bme280-rpi
       npm install 
       npm run build
 
